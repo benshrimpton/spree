@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #amazon aws
 gem 'aws-sdk'
 
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -50,3 +52,6 @@ end
 gem 'spree', github: 'spree/spree', branch: '3-0-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
+
+
+
