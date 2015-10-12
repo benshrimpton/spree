@@ -1,0 +1,16 @@
+!!!
+/[if lt IE 7 ] <html class="ie ie6" lang="<haml_loud> I18n.locale </haml_loud>">
+/[if IE 7 ] <html class="ie ie7" lang="<haml_loud> I18n.locale </haml_loud>">
+/[if IE 8 ] <html class="ie ie8" lang="<haml_loud> I18n.locale </haml_loud>">
+/[if IE 9 ] <html class="ie ie9" lang="<haml_loud> I18n.locale </haml_loud>">
+/ [if gt IE 9]><!
+%html{:lang => "#{I18n.locale}"}
+  / <![endif]
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Spree2
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body{:class => body_class, "data-hook" => "body", :id => "#{@body_id || 'default'}"}
+    = yield

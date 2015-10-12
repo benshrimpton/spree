@@ -1,0 +1,13 @@
+%p#notice= notice
+%p
+  %strong Title:
+  = @journal.title
+%p
+  %strong Url title:
+  = @journal.url_title
+%p
+  %strong Body:
+  = @journal.body
+= link_to 'Edit', edit_journal_path(@journal)
+|
+= link_to 'Back', journals_path
