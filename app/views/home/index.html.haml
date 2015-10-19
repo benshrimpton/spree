@@ -9,3 +9,12 @@
         %a{:href => "/journal"} Journal
       %li
         %a{:href => "/about"} About
+
+%section.container
+  .row
+    %h2 Newly Added
+  .row  
+    - @products.each do |p|
+      %article.col-sm-4
+        %h2=p.name 
+        = link_to 'More Details' , "/product/#{p.slug}"     

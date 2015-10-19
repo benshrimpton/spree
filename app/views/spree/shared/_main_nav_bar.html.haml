@@ -1,7 +1,14 @@
 %nav.col-md-12
+
   #main-nav-bar.navbar
+
     %ul.nav.navbar-nav{"data-hook" => ""}
       %li#home-link{"data-hook" => ""}= link_to Spree.t(:home), spree.root_path
+      %li= link_to 'Girls', spree.root_path+'girls'
+      %li= link_to 'Women', spree.root_path+'women'
+      %li= link_to 'Men', spree.root_path+'men'
+      %li= link_to 'Boys', spree.root_path+'boys'
+      
     %ul.nav.navbar-nav.navbar-right{"data-hook" => ""}
       %li#link-to-cart{"data-hook" => ""}
         %noscript

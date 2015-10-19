@@ -1,10 +1,8 @@
-%body
-  #spree-header
-    %header#header{"data-hook" => ""}
-      .container
-        .row
-          %figure#logo.col-md-4{"data-hook" => ""}
-            = logo
-          = render :partial => 'spree/shared/nav_bar'
-    .container
-      = render :partial => 'spree/shared/main_nav_bar' if store_menu?
+%header.container-fluid{"data-hook" => ""}
+  .row
+    .col-sm-6
+      %h1.logo Edit Gallery
+    .col-sm-6
+      = render :partial => 'spree/shared/nav_bar'
+  .row
+    = render :partial => 'spree/shared/main_nav_bar' if store_menu?

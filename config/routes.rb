@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :blogs
   resources :journals
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
   get 'journal' => 'journals#index'
+  get 'journal/:slug' => 'journals#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
