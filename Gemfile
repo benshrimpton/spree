@@ -29,6 +29,11 @@ gem 'aws-sdk'
 #haml
 gem "haml-rails", "~> 0.9"
 
+#spree
+gem 'spree', github: 'spree/spree', branch: '3-0-stable'
+gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
+gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -51,6 +56,4 @@ group :development, :test do
 end
 
 
-gem 'spree', github: 'spree/spree', branch: '3-0-stable'
-gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
-gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
+
